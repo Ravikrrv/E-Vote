@@ -1,0 +1,69 @@
+/* OrganizingMemberCard.css */
+
+.organizing-member-card {
+    flex: 1; /* Cards take equal space */
+    max-width: 180px; /* Limit maximum width of each card */
+    padding: 20px;
+
+    margin-bottom: 30px;
+    border: 1px solid #7c8cce;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    /* diplay: flex;
+    direction:column;s */
+}
+
+.abhi{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.kuchbhi{
+    text-align: center;
+}
+    /* .kuchbhi2
+    {
+        text-align: center;
+    } */
+.organizing-member-card:hover {
+    /* transform: translateY(-100px);  */
+    
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow*/
+} 
+.organizing-member-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.organizing-member-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.organizing-member-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0 20px; /* Ensure paragraph doesn't overflow */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

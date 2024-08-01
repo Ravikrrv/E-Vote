@@ -1,0 +1,56 @@
+/* Reset default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Increased height for a more substantial look */
+    background-color: #004080; /* Dark blue background */
+    padding: 10px 20px; /* Adjusted padding for a cleaner layout */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo {
+    color: #d11515; /* Red logo color */
+    font-size: 1.8em; /* Slightly larger font size */
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Increased gap for better spacing */
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: whitesmoke; /* Text color */
+    text-decoration: none;
+    padding: 15px 10px; /* Adjusted padding for a comfortable clickable area */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    border-radius: 5px; /* Rounded corners for links */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.nav-links a:hover {
+    background-color: #003366; /* Slightly lighter shade of the navbar color */
+    color: #fff; /* Keep text color white for contrast */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px; /* Spacing for smaller screens */
+    }
+}
